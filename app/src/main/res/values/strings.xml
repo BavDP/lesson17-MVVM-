@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Hackathon (30.11)</string>
+    <string name="regLogin">Enter your login</string>
+    <string name="regPassword">Enter your password</string>
+    <string name="loginTitle">Login form</string>
+    <string name="loginBtnCaption">LogIn</string>
+    <string name="coutnry_flag_image">coutnry flag image</string>
+</resources>
