@@ -7,11 +7,11 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.lifecycle.ViewModelProvider
-import com.example.lesson17.R
 import com.example.lesson17.models.UserAuth
 import com.example.lesson17.mvvm.auth.AuthRepository
 import com.example.lesson17.mvvm.auth.AuthViewModel
 import com.example.lesson17.mvvm.auth.AuthViewModelFactory
+import com.example.lesson17.R
 import com.google.android.material.textfield.TextInputLayout
 
 class LoginFragment : Fragment() {

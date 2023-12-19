@@ -10,7 +10,8 @@ import com.bumptech.glide.Glide
 import com.example.lesson17.R
 import com.example.lesson17.models.Country
 
-class CountriesAdapter(private val countries: List<Country>?): RecyclerView.Adapter<CountriesAdapter.ViewHolder>() {
+class CountriesAdapter(): RecyclerView.Adapter<CountriesAdapter.ViewHolder>() {
+    private var countries: List<Country>? = null
     class ViewHolder(private val view: View): RecyclerView.ViewHolder(view) {
         fun bind(country: Country?) {
             val countryTextView = view.findViewById<TextView>(R.id.coutryNameTextView)
@@ -20,6 +21,11 @@ class CountriesAdapter(private val countries: List<Country>?): RecyclerView.Adap
                 .load(country?.flag)
                 .into(flagImage)
         }
+    }
+
+    fun setCountries(value: List<Country>) {
+        this.countries = value
+        this.notifyDataSetChanged()
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
